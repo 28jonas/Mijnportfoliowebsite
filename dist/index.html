@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welkom bij JaBaPa</title>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap Icons -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+	<style>
+		/* Logo kleuren */
+		.logo-j { color: #007bff; font-family: 'Montserrat', sans-serif; } /* Blauw voor "Ja" */
+		.logo-b { color: #28a745; font-family: 'Montserrat', sans-serif; } /* Groen voor "Ba" */
+		.logo-p { color: #dc3545; font-family: 'Montserrat', sans-serif; } /* Rood voor "Pa" */
+		
+		/* Algemene stijl voor de tekst */
+		body { font-family: 'Roboto', sans-serif; }
+		h1, h2 { font-family: 'Montserrat', sans-serif; }
+		
+		/* Stijl voor secties */
+		.section-wrapper {
+			padding: 4rem 1.5rem;
+			background: #f9f9f9;
+			border-radius: 12px;
+			margin-bottom: 3rem;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+		
+		/* Card hover-effect */
+		.card {
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			border-radius: 8px;
+		}
+		.card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+		}
+		/* Smooth scroll behavior for whole page */
+		html {
+			scroll-behavior: smooth;
+		}
+		/* Position the scroll-to-top button */
+		#scrollToTopBtn {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			display: none; /* Start hidden */
+			z-index: 1000;
+		}
+	</style>
+</head>
+<body>
+
+<!-- Navigatiebalk -->
+<!-- Navigatiebalk -->
+<nav id="topNav" class="navbar navbar-expand-lg navbar-light bg-light shadow-sm mb-4">
+	<div class="container">
+		<a class="navbar-brand fw-bold" href="#">
+			<span class="logo-j">Ja</span><span class="logo-b">Ba</span><span class="logo-p">Pa</span>
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ms-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">BASIS</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+						<li><a class="dropdown-item" href="./basis/oef01/index.html">Lengte en Unicode Waarde Berekenen</a></li>
+						<li><a class="dropdown-item" href="./basis/oef02/index.html">Vermenigvuldig Twee Getallen</a></li>
+						<li><a class="dropdown-item" href="./basis/oef03/index.html">Controleer even of oneven</a></li>
+						<li><a class="dropdown-item" href="./basis/oef04/index.html">Begroet Gebruikers met hun Naam</a></li>
+						<li><a class="dropdown-item" href="./basis/oef05/index.html">Hoogste getal</a></li>
+						<li><a class="dropdown-item" href="./basis/oef06/index.html">Tel het Aantal Woorden</a></li>
+						<li><a class="dropdown-item" href="./basis/oef07/index.html">Vermenigvuldig en Controleer</a></li>
+						<li><a class="dropdown-item" href="./basis/oef08/index.html">Aantal Dagen Berekenen</a></li>
+						<li><a class="dropdown-item" href="./basis/oef09/index.html">Array Methodes in JavaScript</a></li>
+						<li><a class="dropdown-item" href="./basis/oef10/index.html">Namen Sorteren</a></li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">EVENTS</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+						<li><a class="dropdown-item" href="./events/oef01/index.html">Gebruikersinteractie</a></li>
+						<!-- Voeg hier de overige kaarten voor de sectie EVENTS toe zoals hierboven -->
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">DOM</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+						<li><a class="dropdown-item" href="dom/dom1/index.html">Element Selectie en Interactie</a></li>
+						<li><a class="dropdown-item" href="dom/dom2/index.html">Wijziging van Elementen</a></li>
+						<li><a class="dropdown-item" href="dom/dom3/index.html">Stijl Veranderingen met JavaScript</a></li>
+						<li><a class="dropdown-item" href="dom/dom4/index.html">Toevoegen en Verwijderen van Elementen</a></li>
+						<li><a class="dropdown-item" href="dom/domoef/dragendrop/index.html">Interactie via Drag-and-Drop</a></li>
+						<li><a class="dropdown-item" href="dom/domoef/listbox/index.html">Overdragen Functionaliteit tussen Listboxen</a></li>
+						<li><a class="dropdown-item" href="dom/domoef/oef01/index.html">Willekeurige Achtergrondkleur</a></li>
+						<li><a class="dropdown-item" href="dom/domoef/oef02/index.html">Achtergrondkleur aanpassen met willekeurige kleuren</a></li>
+						<li><a class="dropdown-item" href="dom/domoef/todo1/index.html">Todo</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- Hoofdtitel -->
+<header class="container text-center my-5">
+	<h1>Welkom bij JaBaPa - Ontdek BASIS, EVENTS en DOM</h1>
+</header>
+
+<!-- Sections -->
+<div class="container">
+	<!-- Section 1: basis -->
+	<section id="basis" class="section-wrapper">
+		<h2 class="text-center mb-4">Basis</h2>
+		<div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+			<!-- 8 Cards for basis Section -->
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="Lengte en unicode Waarde berekenen">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Lengte en Unicode Waarde Berekenen</h5>
+						<p class="card-text">Ontdek hoe je met JavaScript de lengte van een woord berekent en de Unicode-waarde van een specifiek karakter opvraagt.</p>
+						<div class="mt-auto d-flex justify-content-center">
+							<a href="./basis/oef01/index.html" class="btn btn-primary">Zie oefening</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="Lengte en unicode Waarde berekenen">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Vermenigvuldig Twee Getallen</h5>
+						<p class="card-text">Voer twee getallen in en ontdek hoe je een JavaScript-functie gebruikt om het product te berekenen en weer te geven.</p>
+						<div class="mt-auto d-flex justify-content-center">
+							<a href="./basis/oef02/index.html" class="btn btn-primary">Zie oefening</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="Lengte en unicode Waarde berekenen">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Controleer even of oneven</h5>
+						<p class="card-text">Voer twee getallen in en ontdek hoe je een JavaScript-functie gebruikt om het product te berekenen en weer te geven.</p>
+						<!-- The button is now centered at the bottom -->
+						<div class="mt-auto d-flex justify-content-center">
+							<a href="./basis/oef03/index.html" class="btn btn-primary">Zie oefening</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="Lengte en unicode Waarde berekenen">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Begroet Gebruikers met hun Naam</h5>
+						<p class="card-text">Voer je naam in en ontvang een gepersonaliseerde begroeting met JavaScript.</p>
+						<!-- The button is now centered at the bottom -->
+						<div class="mt-auto d-flex justify-content-center">
+							<a href="./basis/oef04/index.html" class="btn btn-primary">Zie oefening</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="Lengte en unicode Waarde berekenen">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Hoogste getal</h5>
+						<p class="card-text">Voer drie getallen in en ontdek het grootste getal met behulp van de Math.max() functie in JavaScript.</p>
+						<!-- The button is now centered at the bottom -->
+						<div class="mt-auto d-flex justify-content-center">
+							<a href="./basis/oef05/index.html" class="btn btn-primary">Zie oefening</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="Lengte en unicode Waarde berekenen">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Tel het Aantal Woorden</h5>
+						<p class="card-text">Ontdek hoe je in JavaScript het aantal woorden in een zin kunt tellen met behulp van de split-methode.</p>
+						<!-- The button is now centered at the bottom -->
+						<div class="mt-auto d-flex justify-content-center">
+							<a href="./basis/oef06/index.html" class="btn btn-primary">Zie oefening</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="Lengte en unicode Waarde berekenen">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Vermenigvuldig en Controleer</h5>
+						<p class="card-text">Voer twee getallen in, vermenigvuldig ze en ontdek of het resultaat groter is dan 100 met behulp van een JavaScript-functie die true of false retourneert.</p>
+						<!-- The button is now centered at the bottom -->
+						<div class="mt-auto d-flex justify-content-center">
+							<a href="./basis/oef07/index.html" class="btn btn-primary">Zie oefening</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="Lengte en unicode Waarde berekenen">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Vermenigvuldig en Controleer</h5>
+						<p class="card-text">Voer twee getallen in, vermenigvuldig ze en ontdek of het resultaat groter is dan 100 met behulp van een JavaScript-functie die true of false retourneert.</p>
+						<!-- The button is now centered at the bottom -->
+						<div class="mt-auto d-flex justify-content-center">
+							<a href="./basis/oef08/index.html" class="btn btn-primary">Zie oefening</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="Lengte en unicode Waarde berekenen">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Array Methodes in JavaScript</h5>
+						<p class="card-text">Leer hoe je array-methoden zoals push, pop, shift, unshift, map, filter, find, slice, splice, en reduce kunt gebruiken voor efficiënte array-manipulatie</p>
+						<!-- The button is now centered at the bottom -->
+						<div class="mt-auto d-flex justify-content-center">
+							<a href="./basis/oef09/index.html" class="btn btn-primary">Zie oefening</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="Lengte en unicode Waarde berekenen">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Namen Sorteren</h5>
+						<p class="card-text">Voer een aantal namen in, sla ze op in een array en sorteer de namen alfabetisch en in omgekeerde volgorde met JavaScript.</p>
+						<!-- The button is now centered at the bottom -->
+						<div class="mt-auto d-flex justify-content-center">
+							<a href="./basis/oef10/index.html" class="btn btn-primary">Zie oefening</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="Lengte en unicode Waarde berekenen">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Optellen twee getallen</h5>
+						<p class="card-text">Statisch optellen van twee getallen in de console.log</p>
+						<!-- The button is now centered at the bottom -->
+						<div class="mt-auto d-flex justify-content-center">
+							<a href="./basis/basisextraoef/oef01/index.html" class="btn btn-primary">Zie oefening</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="Functie begroeting">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Functie begroeting</h5>
+						<p class="card-text">Via functie een begroeting doen van iemand. Dit is terug statisch en is te vinden in de console.log</p>
+						<!-- The button is now centered at the bottom -->
+						<div class="mt-auto d-flex justify-content-center">
+							<a href="./basis/basisextraoef/oef02/index.html" class="btn btn-primary">Zie oefening</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="Even of oneven getal">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Functie Even of oneven</h5>
+						<p class="card-text">Zoek met een functie of een getal even of oneven is. Ouput false of true. Zie console.log</p>
+						<!-- The button is now centered at the bottom -->
+						<div class="mt-auto d-flex justify-content-center">
+							<a href="./basis/basisextraoef/oef04/index.html" class="btn btn-primary">Zie oefening</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="omdraaien woord">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Functie keer om</h5>
+						<p class="card-text">Ga met een functie opzoek en keer het woord (javascript) om. Zie console.log</p>
+						<!-- The button is now centered at the bottom -->
+						<div class="mt-auto d-flex justify-content-center">
+							<a href="./basis/basisextraoef/oef05/index.html" class="btn btn-primary">Zie oefening</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="Klinkers naar *">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Klinkers veranderen naar *</h5>
+						<p class="card-text">Schrijf een functie vervangKlinkers(tekst) die alle klinkers in een string vervangt door het teken * </p>
+						<!-- The button is now centered at the bottom -->
+						<div class="mt-auto d-flex justify-content-center">
+							<a href="./basis/basisextraoef/oef06/index.html" class="btn btn-primary">Zie oefening</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="Factorial function">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Faculteit van een getal</h5>
+						<p class="card-text">Schrijf een functie factorial(n) die het faculteit van n berekent. Het faculteit van een getal n is het product van alle positieve gehele getallen kleiner dan of gelijk aan n</p>
+						<!-- The button is now centered at the bottom -->
+						<div class="mt-auto d-flex justify-content-center">
+							<a href="./basis/basisextraoef/oef07/index.html" class="btn btn-primary">Zie oefening</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="Tellen van aantal woorden">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Tellen van aantal woorden</h5>
+						<p class="card-text">Schrijf een functie telWoorden(zin) die het aantal woorden in een zin telt en het resultaat retourneert</p>
+						<!-- The button is now centered at the bottom -->
+						<div class="mt-auto d-flex justify-content-center">
+							<a href="./basis/basisextraoef/oef09/index.html" class="btn btn-primary">Zie oefening</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="Wachtwoord generator">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title">Wachtwoord generator</h5>
+						<p class="card-text">Schrijf een functie genereerWachtwoord(lengte) die een willekeurig wachtwoord van een opgegeven lengte genereert. Het wachtwoord moet uit hoofdletters, kleine letters, cijfers en speciale tekens bestaan</p>
+						<!-- The button is now centered at the bottom -->
+						<div class="mt-auto d-flex justify-content-center">
+							<a href="./basis/basisextraoef/oef10/index.html" class="btn btn-primary">Zie oefening</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Section 2: Events -->
+	<section id="events" class="section-wrapper">
+		<h2 class="text-center mb-4">Events</h2>
+		<div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+			<!-- 8 Cards for Events Section -->
+			<div class="col">
+				<a href="./event/index.html" class="card h-100 text-decoration-none text-dark">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="Events Image 1">
+					<div class="card-body">
+						<h5 class="card-title">Gebruikersinteractie</h5>
+						<p class="card-text">Ontdek hoe je JavaScript kunt gebruiken om reacties te triggeren bij het klikken op knoppen, het indienen van formulieren en het indrukken van toetsen.</p>
+					</div>
+				</a>
+			</div>
+			<div class="col">
+				<a href="./event/eventextraoef/oef01/index.html" class="card h-100 text-decoration-none text-dark">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="klik button">
+					<div class="card-body">
+						<h5 class="card-title">Click event button</h5>
+						<p class="card-text">Voeg een Click Event toe aan een knop om een Bericht weer te geven. Zie console.log</p>
+					</div>
+				</a>
+			</div>
+			<div class="col">
+				<a href="./event/eventextraoef/oef02/index.html" class="card h-100 text-decoration-none text-dark">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="klik button">
+					<div class="card-body">
+						<h5 class="card-title">Double-click event button</h5>
+						<p class="card-text">Voeg een double-click event toe aan een div die de achtergrondkleur verandert naar lightblue en in de console . Zie console.log</p>
+					</div>
+				</a>
+			</div>
+			<!-- Voeg hier de overige kaarten voor de sectie EVENTS toe zoals hierboven -->
+		</div>
+	</section>
+	
+	<!-- Section 3: dom -->
+	<section id="dom" class="section-wrapper">
+		<h2 class="text-center mb-4">DOM</h2>
+		<div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+			<!-- 8 Cards for dom Section -->
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="javascrip image">
+					<ul class="card-body list-group list-group-flush">
+						<li class="list-group-item">
+							<h5 class="card-title list-group-flush ">Element Selectie en Interactie</h5>
+						</li>
+						<li class="list-group-item">
+							<p class="card-text">Deze pagina demonstreert hoe je elementen op een pagina selecteert met JavaScript en de inhoud ervan toont in de console.</p>
+						</li>
+					</ul>
+					<div class="card-body mt-auto d-flex justify-content-center" style="max-height: 75px;">
+						<a href="./dom/dom1/index.html" class="btn btn-primary">Zie oefening</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="javascrip image">
+					<ul class="card-body list-group list-group-flush">
+						<li class="list-group-item">
+							<h5 class="card-title list-group-flush ">Wijziging van Elementen</h5>
+						</li>
+						<li class="list-group-item">
+							<p class="card-text">Deze pagina toont hoe je de inhoud en attributen van HTML-elementen kunt aanpassen met JavaScript.</p>
+						</li>
+					</ul>
+					<div class="card-body mt-auto d-flex justify-content-center" style="max-height: 75px;">
+						<a href="./dom/dom2/index.html" class="btn btn-primary">Zie oefening</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="javascrip image">
+					<ul class="card-body list-group list-group-flush">
+						<li class="list-group-item">
+							<h5 class="card-title list-group-flush ">Stijl Veranderingen met JavaScript</h5>
+						</li>
+						<li class="list-group-item">
+							<p class="card-text">Deze pagina toont hoe je inline stijlen kunt toepassen op een HTML-element met JavaScript, zoals kleur en achtergrondkleur.</p>
+						</li>
+					</ul>
+					<div class="card-body mt-auto d-flex justify-content-center "  style="max-height: 75px">
+						<a href="./dom/dom3/index.html" class="btn btn-primary">Zie oefening</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="javascrip image">
+					<ul class="card-body list-group list-group-flush">
+						<li class="list-group-item">
+							<h5 class="card-title list-group-flush ">Toevoegen en Verwijderen van Elementen</h5>
+						</li>
+						<li class="list-group-item">
+							<p class="card-text">Deze pagina demonstreert hoe je nieuwe elementen kunt toevoegen en bestaande elementen kunt verwijderen met JavaScript.</p>
+						</li>
+					</ul>
+					<div class="card-body mt-auto d-flex justify-content-center" style="max-height: 75px;">
+						<a href="./dom/dom4/index.html" class="btn btn-primary">Zie oefening</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="javascrip image">
+					<ul class="card-body list-group list-group-flush">
+						<li class="list-group-item">
+							<h5 class="card-title list-group-flush ">Interactie via Drag-and-Drop</h5>
+						</li>
+						<li class="list-group-item">
+							<p class="card-text">Deze pagina toont hoe je items kunt slepen tussen twee listboxen met JavaScript.</p>
+						</li>
+					</ul>
+					<div class="card-body mt-auto d-flex justify-content-center" style="max-height: 75px">
+						<a href="./dom/domoef/dragendrop/index.html" class="btn btn-primary">Zie oefening</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="javascrip image">
+					<ul class="card-body list-group list-group-flush">
+						<li class="list-group-item">
+							<h5 class="card-title list-group-flush ">Overdragen Functionaliteit tussen Listboxen</h5>
+						</li>
+						<li class="list-group-item">
+							<p class="card-text">Deze pagina demonstreert hoe je items kunt overdragen tussen twee listboxen met JavaScript met buttons.</p>
+						</li>
+					</ul>
+					<div class="card-body mt-auto d-flex justify-content-center" style="max-height: 75px">
+						<a href="./dom/domoef/listbox/index.html" class="btn btn-primary">Zie oefening</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="javascrip image">
+					<ul class="card-body list-group list-group-flush">
+						<li class="list-group-item">
+							<h5 class="card-title list-group-flush ">Willekeurige Achtergrondkleur</h5>
+						</li>
+						<li class="list-group-item">
+							<p class="card-text">Deze pagina demonstreert hoe je met één klik op een knop de achtergrondkleur kunt veranderen naar een willekeurige kleur met doorzichtigheid.</p>
+						</li>
+					</ul>
+					<div class="card-body mt-auto d-flex justify-content-center" style="max-height: 75px">
+						<a href="./dom/domoef/oef01/index.html" class="btn btn-primary">Zie oefening</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100">
+					<img src="./assets/img-Bm2Pj88Q.png" class="card-img-top" alt="javascrip image">
+					<ul class="card-body list-group list-group-flush">
+						<li class="list-group-item">
+							<h5 class="card-title list-group-flush ">Todo</h5>
+						</li>
+						<li class="list-group-item">
+							<p class="card-text">Deze pagina laat zien hoe je interactie kunt toevoegen aan een dynamische lijst met JavaScript, waarbij je items kunt toevoegen, doorstrepen en verwijderen.</p>
+						</li>
+					</ul>
+					<div class="card-body mt-auto d-flex justify-content-center" style="max-height: 75px">
+						<a href="./dom/domoef/todo1/index.html" class="btn btn-primary">Zie oefening</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<!-- Scroll-to-top knop -->
+<a href="#topNav" id="scrollToTopBtn" class="btn btn-primary btn-lg">
+	<i class="bi bi-arrow-up"></i>
+</a>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+	// Eenvoudige JavaScript voor het tonen/verbergen van de knop
+	const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+	
+	window.addEventListener("scroll", () => {
+		scrollToTopBtn.style.display = window.scrollY > 200 ? "block" : "none";
+	});
+</script>
+</body>
+</html>
