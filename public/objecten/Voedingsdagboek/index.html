@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="./index.js" defer></script>
+	
+	<title>Winkelmand</title>
+</head>
+<body class="container">
+<h1>Voedingsdagboek</h1>
+<div>
+	<h2>Persoonlijke gegevens</h2>
+	<div class="row-cols-4">
+		<!--radiobutton-->
+		<div class="col">
+			<p class="m-0">Geslacht</p>
+			<input class="form-check-input" type="radio" name="flexRadioDefault" id="radioMan" checked>
+			<label class="form-check-label" for="radioMan">
+				Man
+			</label>
+			<input class="form-check-input" type="radio" name="flexRadioDefault" id="radioVrouw">
+			<label class="form-check-label" for="radioVrouw">
+				Vrouw
+			</label>
+		</div>
+		<input id="leeftijd" class="col" type="number" placeholder="Geef hier uw leeftijd in">
+		<input id="lengte" class="col" type="number" placeholder="Geef uw lengte in cm">
+		<input id="gewicht" class="col" type="number" placeholder="Geef uw gewicht in kg">
+		<select id="activiteitsniveau" class="form-select">
+			<option selected value="1.2">Sedentair (weinig tot geen beweging)</option>
+			<option value="1.375">Licht actief (lichte training/sport 1-3 dagen per week)</option>
+			<option value="1.55">Matig actief (matige training/sport 3-5 dagen per week)</option>
+			<option value="1.725">Zeer actief (zware training/sport 6-7 dagen per week)</option>
+			<option value="1.9">Extreem actief (zeer zware training/sport, fysiek werk</option>
+		</select>
+	</div>
+	<div>
+		<button id="caloriebehoeftebtn" class="btn btn-danger">Bereken Dagelijkse Caloriebehoefte</button>
+	</div>
+	<div>
+		<p id="dagcal"></p>
+	</div>
+</div>
+
+<div>
+	<h2>Voeg een maaltijd toe</h2>
+	<input type="text" name="Maaltijdnaam" id="maaltijdnaam" placeholder="Maaltijdnaam">
+	<input type="text" name="Calorieën" id="calorieen" placeholder="Calorieën">
+	<input type="text" name="Koolhydraten" id="koolhydraten" placeholder="Koolhydraten (g)">
+	<input type="text" name="Vetten" id="vetten" placeholder="Vetten (g)">
+	<input type="text" name="Eiwitten" id="eiwitten" placeholder="Eiwitten (g)">
+	<button id="btnmaaltijd" class="btn btn-primary">Voeg een maaltijd toe</button>
+</div>
+
+<ul id="eten" class="list-group">
+	<li class="list-group-item">An item</li>
+</ul>
+
+<div id="totaaleten" class="d-flex justify-content-center align-items-center">
+
+</div>
+
+</body>
+</html>
